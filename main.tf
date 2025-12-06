@@ -24,8 +24,3 @@ check "website_responds_200" {
     error_message = "${var.url} returned status code ${data.http.current_check.status_code}"
   }
 }
-
-variable "url" {
-  type    = string
-  default = "https://www.terraform.io"
-}
